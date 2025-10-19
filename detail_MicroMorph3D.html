@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroMorph3D</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                Peter's Page
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link nav-link-1" href="index.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-3" href="projects.html">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-3 active" aria-current="page" href="products.html">Products</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-4" href="CV.html">CV</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-5" href="contact.html">Contact</a>
+				</li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg">
+    </div>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="col-12 tm-text-primary"><b>MicroMorph3D</b> - a versatile 3D-Scanner</h2>
+        </div>
+        <div class="row tm-mb-90">            
+            <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
+                <img src="img/proj_MicroMorph3D_all.jpg" alt="Image" class="img-fluid">
+            </div>
+			<p class="mb-4"></p> <!-- empty line -->
+			<!-- <p style="margin-bottom:2cm;"></p> -->
+            <!-- <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12"> -->
+			<div class="tm-text-gray-black tm-video-details">
+				<p class="tm-text-gray-dark mb-4">
+					This pages contains a quick start guide to setup and run the MicroMorph3D, a versatile and high-resolution photogrammetric 3D-Scanner.
+					<br><br>
+					I run my devises on Windows only, so everything is tested for Windows only.
+				</p>
+				</div>
+				<p class="mb-4"></p> <!-- empty line -->
+				<div class="tm-bg-gray tm-video-details">
+				<p class="tm-text-gray-dark mb-4">
+				<h4 class="col-12 tm-text-gray-dark"><b>Software</b></h4>
+					Please begin with downloading and installing the latest versions of the following software:
+				</p>
+				<div class="text-center mb-5">
+					<a href="https://processing.org/download" target="_blank" class="btn btn-primary tm-btn-big">Processing</a>
+					<p class="tm-text-gray-dark mb-4">
+						to run the scanner software interface,
+					</p>
+				</div>
+				<div class="text-center mb-5">
+					<a href="https://imagej.net/software/fiji/downloads" target="_blank" class="btn btn-primary tm-btn-big">Fiji</a>
+					<p class="tm-text-gray-dark mb-4">
+						(optional, but recommended)<br>
+						to edit the scanned images,
+					</p>
+				</div>
+				<div class="text-center mb-5">
+					<a href="https://www.zerenesystems.com/cms/stacker/softwaredownloads" target="_blank" class="btn btn-primary tm-btn-big">Zerene Stacker</a>
+					<p class="tm-text-gray-dark mb-4">
+						to stack the images from one angular view.<br>
+						This is still needed (a 30 day test license is available for free), but I'm working on a free workaround. run the 'typical installation' when asked.
+					</p>
+				</div>
+				<div class="text-center mb-5">
+					<a href="https://www.agisoft.com/downloads/installer/" target="_blank" class="btn btn-primary tm-btn-big">MetaShape</a>
+					<p class="tm-text-gray-dark mb-4">
+						to run the 3D mesh creation.<br><br>
+						MetaShape is not available as a freeware, but the license is included in the MicroMorph3D package. Reach out to me if you have not received a license from me. There is also a freeare alternative (<a href="https://alicevision.org/#meshroom" target="_blank">Meshroom by AliceVision</a>), which is pretty good but last time I checked (mid-2023), the software was both slower and less accurate compared to MetaShape.
+						
+					</p>
+				</div>
+				<div class="text-center mb-5">
+					<a href="https://github.com/NatureDimensions/MicroMorph3D-community/tree/main/releases" target="_blank" class="btn btn-primary tm-btn-big">Scanner interface and motor control software</a>
+					<p class="tm-text-gray-dark mb-4">
+						<br>Get the ZIP file from the latest (pre-)release of the MicroMorph3D scanning interface and motor control software from the <a href="https://github.com/NatureDimensions/MicroMorph3D-community/tree/main/releases" target="_blank">GitHub page</a> (e.g., <span style="font-family:'Courier New'">MicroMorph3D-0.0.9025.zip</span>).<br>
+						Un-zip  this folder to a place that you can remember and that is accessible in the future, since it contains the software to run the scanner.
+						<br>
+						<li> Start the scanner interface software by double-clicking the processing file <span class="tm-text-gray-dark" style="font-family:'Courier New'">MicroMorph3D_GUI.pde</span> (or similar), located in <span class="tm-text-gray-dark" style="font-family:'Courier New'">.\MicroMorph3D-x.x.xyz\GUI\MicroMorph3D_GUI\</span> - the un-zipped folder from above. This will open the source code in the Processing programming environment. Without changing any code, click the "Play" button in the top menu. The scanner software should start with a graphical user interface containing buttons and the camera live view.
+						<li> There may be errors like <span style="font-family:'Courier New'">No library found for processing.video: install Video Library for Processing</span><br>
+						To resolve this, go, e.g., to <span style="font-family:'Courier New'">Sktech -> Import Library -> Manage Libraries</span> and search for "Video" to install the missing package(s).
+					
+					</p>
+				</div>
+			
+				<h4 class="col-12 tm-text-gray-dark"><b>Device setup</b></h4>
+				<ul>
+					<li> Insert the micro-USB-cable of the Aduino UNO to your PC.
+					<li> Insert the USB-C-cable of the Eakins camera to your PC.
+					<li> Insert the 12V DC cable into the round socket at the back of the scanner.
+				</ul>
+				<h4 class="col-12 tm-text-gray-dark"><b>Scanning</b></h4>
+				<h5 class="col-12 tm-text-gray-dark"><b>Preparations</b></h5>
+				<ul>
+					<li> If not already done: Start the scanner interface software by double-clicking the processing file <style="font-family:'Courier New'">MicroMorph3D_GUI.pde</span> (or similar), located in <span style="font-family:'Courier New'">.\MicroMorph3D-x.x.xyz\GUI\MicroMorph3D_GUI\</span> - the un-zipped folder from above.
+					<li> Click the "Play" button in the top menu. The scanner software should start with a graphical user interface containing buttons and the camera live view.
+					<li> Make sure the focus rail (camera rail) is not blocked and click <span style="font-family:'Courier New'">Home Focus</span>
+					<li> Make sure the sphere is closed (or fully open) and click <span style="font-family:'Courier New'">Home Tilt</span>
+					<li> Make sure that the camera arm is centered so that the camera looks perfectly into the center of the sphere. This is easiest done with without any extension rings between camera and lens.
+				</ul>
+				<h5 class="col-12 tm-text-gray-dark"><b>Centering</b></h5>
+				<ul>
+					<li> Place a sample on a sample holder
+					<li> Put sample holder into scanner and center it as good as possible. 
+					<li> Use the specimen and arm rotation button of the scanner software to rotate the specimen and see if it really is centered. You may adjust the position of the specimen (right/left), but also the height (up/down).
+					<li> I recommend to center the specimen in the rotations 0° and 90°. When the specimen is centered in these two views, it should not rotate out of view in any of the other rotation steps, since, e.g., 180° is the mirrored view of 0°, 270° is the mirrored view of 90°.
+					<li> In short:
+					<ul>
+					    <li> Use the software to move camera along the rail so the sample is in focus
+						<li> Center sample in 0° rotation
+						<li> Rotate sample by 90°
+						<li> Center sample in 90° rotation
+						<li> Redo centering steps if necessary
+					</ul>
+				</ul>
+				<h5 class="col-12 tm-text-gray-dark"><b>Zooming</b></h5>
+				<ul>
+					<li> Add/remove extension rings to have the specimen as large (format-filling) in the view as possible without it rotating out. 
+					<li> You may also adjust the focal plane of the lens by rotating the frontal lens between the NEAR and FAR settings. (more detailed info on this will follow, but you may play around with the setup to find the settings that best suit your sample)
+					<li> A little bit of the specimen may rotate out of view in some of the views (e.g. a long leg or similar), as long as the structure is covered by other views.
+					<li> Close the sphere (of not closed already)
+					<li> If dislocated, return the ring rotation hinge screw on the right of the sphere back into its hole (this is a design flaw of the current version, I am very sorry about that)
+					<li> scanning settings
+				</ul>
+				<h5 class="col-12 tm-text-gray-dark"><b>Scan settings</b></h5>
+				<ul>
+					<li> Define the scan settings:
+					<ul>
+						<li> imgs_x: how many rotation steps around the sample should be photographed? (~ 50)
+						<li> imgs_y: same as imgs_x, just with ring rotation steps (3-5)
+						<li> imgs_z: how many focal planes should be photographed between start_z_mm and end_z_mm? (~12)
+						<ul>
+							<li> A formula to calculate this will be send in the futur - it is not ready yet.
+							<li> The idea is the with every little movement along the camera rail, the focus should shift so that there is an overlap of the two adjacent focal planes of 10-20%. When there is no overalp, the focus-stacking may recover the image with un-focused elements in-between focused elements of the specimen. So rather take a few to many focus steps than too few.
+						</ul>
+						<li> start_z_mm / end_z_mm: define the positions of the first and the last focal planes
+						<ul>
+							<li> check the last settings at specimen rotations 90° and 180°, as well as in arm tilt positions (ring rotations) at -45° and +45°, too, to make sure the specimen won't leave the in-focus area at these positions.
+						</ul>
+					</ul>
+				</ul>
+					<h5 class="col-12 tm-text-gray-dark"><b>Start scan!</b></h5>
+				<ul
+					<li> When everything seems fine, start the scan!
+				</ul>
+				<h4 class="col-12 tm-text-gray-dark"><b>Postprocessing</b></h4>
+				<h5 class="col-12 tm-text-gray-dark"><b>Image cropping and contrast ajustments</b></h5>
+				<ul>
+					<li> When the scan is finished, drag-and-drop the folder with all images into Fiji (or ImageJ). Uncheck the box "Load as virtual scan". Depending on the number of images taken, this is rather memory-intensive. The purpose is to first reduce the data size by cropping the scan images to only contain specimen data, and then to increase contrast. Both steps are optional but I recommend them. Especially data size reduction will be helpful for focus stacking and 3D-mesh generation.
+					<li> Define a rectangle around the specimen. Scroll through the whole stack to make sure the specimen is within this selection box in all slices.
+					<li> Press Ctrl+Shift+X or Image -> Crop to crop the stack to the selection.
+					<li> Save the new image stack with File -> Save as -> Image Sequence... Create a new folder, e.g. <span style="font-family:'Courier New'">&lt;scan_name&gt;_cr</span>
+					<li> Increase the contrast via Process -> Enhance Contrst... with the checkboxes "Process all slices" and "Use stack histogram" checked and "Saturated pixels" at 0.0%. This will strongly increase the cotrast of the images, but may even overdo it a bit. Your choice.
+					<li> If satisfied, save the image stack with File -> Save as -> Image Sequence... Create a new folder, e.g. <span style="font-family:'Courier New'">&lt;scan_name&gt;_cr_contr</span>.
+				</ul>
+				<h5 class="col-12 tm-text-gray-dark"><b>Focus stacking</b></h5>
+				<ul>
+					<li> To prepare the images for focus stacking, the set of images from each angle must be in their own folder.
+					<li> Find the script <span style="font-family:'Courier New'">sort-stacks.ps1</span> in the un-zipped folder <span style="font-family:'Courier New'">MicroMorph3D-0.0.9025\file_sorting\</span> and move it to the image folder, e.g. <span style="font-family:'Courier New'">&lt;scan_name&gt;_cr_contr/</span>
+					<li> Right-click the file and choose "Run with PowerShell". This should sort the images into their new subfolders named by their angular information.
+					<li> Open the Zerene Stacker software
+					<li> Open the batch mode with Batch -> Open batchmode (or similar)
+					<li> Drag-and-drop all just created folders with the sorted images into the batch window
+					<li> Check "Save in designated folder (as sourcename_...)" and define a folder, e.g. <span style="font-family:'Courier New'">&lt;scan_name&gt;_cr_contr_stacked/</span>
+					<li> Click "Run all batches" and chose PMax with default settings. If you want to try out DMap and other settings, you may play around with this - there are good tutorials for Zerene Stacker in the web.
+				</ul>
+				<h4 class="col-12 tm-text-gray-dark"><b>3D-Mesh generation</b></h4>
+				<!-- <h5 class="col-12 tm-text-gray-dark"><b>Image cropping and contrast ajustments</b></h5> -->
+				<ul>
+					<li> Open the MetaShape software
+					<li> I highly recommend getting used to the software but studying the <a href="https://www.agisoft.com/pdf/metashape-pro_1_5_en.pdf" target="_blank">official manual</a> (from Chapter 3. General workflow) and/or browse the web for tutorials and videos. However, if the scan is good and the specimen ot too dark or shiny, the standard and quick worflow may already yield very decent results:
+					<li> Drag-and-drop all stacked images into the window
+					<li> Workflow -> Align Photos with default settings
+					<li> Workflow -> Build Model with default settings
+					<li> Workflow -> Build Texture with default settings
+					<li> Export -> Export Model and save, e.g. as *.OBJ file
+				</ul>
+			</div>
+				<p class="mb-4"></p> <!-- empty line --> 
+			<div class="tm-bg-gray tm-video-details">
+				<h4 class="col-12 tm-text-gray-dark"><b>Support</b></h4>
+				<div class="text-center mb-5">
+					<a href="https://github.com/NatureDimensions/MicroMorph3D-community/discussions" target="_blank" class="btn btn-primary tm-btn-big">Discussions and support<br>
+						@ GitHub</a>
+				</div>
+			</div>
+            <!-- </div> -->
+        </div>
+    </div> <!-- container-fluid, tm-container-content -->
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Peter T. Rühr</h3>
+                    <!-- <p>To the right you may find links to my most important appearances.</p> -->
+                </div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-2">
+						<li class="mb-2"><a href="https://scholar.google.com/citations?user=E5-tCk0AAAAJ&hl=en" target="_blank"><img src="img/icons/google-scholar.svg"></a></li>
+						<li class="mb-2"><a href="https://www.researchgate.net/profile/Peter-Ruehr" target="_blank"><img src="img/icons/researchgate.svg"></a></li>
+						<li class="mb-2"><a href="https://orcid.org/0000-0003-2776-6172" target="_blank"><img src="img/icons/orcid.svg"></a></li>
+						<li class="mb-2"><a href="https://www.webofscience.com/wos/author/record/I-7328-2015" target="_blank"><img src="img/icons/clarivate.svg"></a></li>
+					</ul>
+					<ul class="tm-social-links d-flex justify-content-end pl-0 mb-2">
+                        <li class="mb-2"><a href="https://github.com/Peter-T-Ruehr" target="_blank"><img src="img/icons/github.svg"></a></li>
+						<li class="mb-2"><a href="https://twitter.com/Peter_Th_R" target="_blank"><img src="img/icons/twitter.svg"></a></li>
+						<li class="mb-2"><a href="https://www.inaturalist.org/observations?user_id=peter_t_ruehr&place_id=any&verifiable=any" target="_blank"><img src="img/icons/iNat.svg"></a></li>
+					</ul>
+					<ul class="tm-social-links d-flex justify-content-end pl-0 mb-2">
+						<li class="mb-2"><a href="https://www.instagram.com/peter.t.ruehr" target="_blank"><img src="img/icons/instagram.svg"></a></li>
+						<li class="mb-2"><a href="https://www.etsy.com/de/shop/NatureDimensions?ref=l2-about-shopname" target="_blank"><img src="img/icons/etsy.svg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                    Copyright 2023 by Peter T. Rühr. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>

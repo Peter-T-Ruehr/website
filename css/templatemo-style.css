@@ -277,7 +277,8 @@ a.tm-text-primary:hover { color:#666666; }
 
 p, .tm-text-gray { color: #999; }
 .tm-text-gray-light { color: #CCC; }
-.tm-text-gray-dark { color: #666; }
+.tm-text-gray-dark { color: #000; }
+.tm-text-black { color: #000; }
 
 .tm-video-item {
     position: relative;
